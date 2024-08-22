@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Designs</title>
+    <!-- tailwind css and daisyUi link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Manrope Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind css config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ABEF5F',
+                        secondary: 'rgba(171, 239, 95, 0.5)',
+                        black: 'rgba(33, 33, 33, 1)',
+                        gray: '#494949',
+                    },
+                    fontFamily: {
+                        manrope: "Manrope",
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <!-- Header Section -->
+    <header>
+        <!-- Navbar -->
+        <nav class="w-11/12 mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="flex items-center gap-1">
+                        <img class="bg-primary p-1.5 rounded-full" src="./assets/Group 1.png" alt="">
+                        <a class="text-3xl font-extrabold">Rinterio</a>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-sm font-extrabold"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="items-center hidden lg:inline-block space-x-2">
+                        <button class="space-x-2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button>
+                            <a class="btn bg-primary px-4 rounded-3xl">Book Consult<img class="bg-black p-1 rounded-xl"
+                                    src="./assets/Group 2.png" alt=""></a>
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                            <li class="text-sm font-extrabold"><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+        <!-- Banner Section -->
+        <section class="w-11/12 mx-auto flex justify-center items-center">
+            <div class="card">
+                <figure>
+                    <img class="px-5" src="./assets/banner.png" alt="House" />
+                </figure>
+                <div class="card-body justify-center items-center text-center">
+                    <h2 class="card-title text-3xl lg:text-6xl font-extrabold text-black text-center mb-1.5 lg:mb-4">A
+                        barn house of this design has a<br>striking appearance</h2>
+                    <p class="card-description text-xs lg:text-sm font-medium text-gray mb-2 lg:mb-4">The barn house
+                        captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+                        sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+                    <div class="card-actions">
+                        <button class="btn px-16 lg:px-4 rounded-3xl bg-secondary text-xl font-bold">View Details<img
+                                class="bg-primary p-1.5 rounded-full" src="./assets/Group 1.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner End -->
+    </header>
+    <!-- Main Section -->
+    <main>
+
+    </main>
+    <!-- Footer Section -->
+    <footer>
+
+    </footer>
 </body>
+
 </html>
