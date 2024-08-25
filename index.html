@@ -34,10 +34,13 @@
                         yellow_bg: 'rgba(239, 218, 110, 1)',
                         aqua_bg: 'rgba(164, 218, 195, 1)',
                         blue_bg: 'rgba(119, 170, 234, 1)',
-                        border_solid: 'rgba(233, 233, 233, 1),'
+                        border_solid: 'rgba(233, 233, 233, 1)',
                     },
                     fontFamily: {
                         manrope: "Manrope",
+                    },
+                    backgroundImage: {
+                        banner_two: "url('./assets/bg.jpg')",
                     }
                 }
             }
@@ -250,7 +253,8 @@
                             </button>
                             <h1 class="text-4xl font-bold text-black mt-5">Our Latest Portfolio</h1>
                             <p class="my-6 text-base font-medium text-gray">
-                                This ensures that modern design adapts and resonates authentically with the specific geographical context,<br> fostering a dynamic and diverse architectural expression.
+                                This ensures that modern design adapts and resonates authentically with the specific
+                                geographical context,<br> fostering a dynamic and diverse architectural expression.
                             </p>
                         </div>
                         <!-- Card -->
@@ -262,7 +266,9 @@
                                 </div>
                                 <div class="px-6 lg:px-1 lg:py-9">
                                     <h3 class="text-2xl font-extrabold mb-4">Apartment</h3>
-                                    <p class="text-base font-medium">Democratization of the design experience ensures that residents become active contributors to the unique character <br> and ambiance of their homes.</p>
+                                    <p class="text-base font-medium">Democratization of the design experience ensures
+                                        that residents become active contributors to the unique character <br> and
+                                        ambiance of their homes.</p>
                                     <div class="flex gap-2 my-4">
                                         <h3 class="text-xl font-extrabold">View Details</h3>
                                         <img class="bg-primary p-2 rounded-full" src="./assets/Group 1.png" alt="">
@@ -287,7 +293,8 @@
                                 </div>
                                 <div class="lg:w-[50%] px-6 lg:px-1 py-9">
                                     <h3 class="text-2xl font-extrabold mb-4">Commercial</h3>
-                                    <p class="text-base font-medium">This international design landscape that reflects a harmonious blend of influences worldwide.</p>
+                                    <p class="text-base font-medium">This international design landscape that reflects a
+                                        harmonious blend of influences worldwide.</p>
                                     <div class="flex gap-2 mt-4">
                                         <h3 class="text-xl font-extrabold">View Details</h3>
                                         <img class="bg-primary p-2 rounded-full" src="./assets/Group 1.png" alt="">
@@ -302,10 +309,67 @@
                 </section>
             </section>
         </section>
+        <!-- Let's Connect Section -->
+        <section class="mt-10 m-1.5 bg-banner_two bg-no-repeat bg-cover">
+            <div class="w-full h-full bg-background_bg bg-opacity-60">
+                <div class="w-11/12 mx-auto pt-10">
+                    <div class="text-center">
+                        <button class="btn rounded-3xl bg-secondary px-5 gap-2"><i
+                                class="fa-solid fa-arrow-right"></i>Let’s Connect
+                        </button>
+                        <h1 class="text-4xl font-bold text-black mt-5">Let’s Discuss Next Project</h1>
+                        <p class="my-5 text-base font-medium text-gray">Design adapts and resonates of authentically
+                            with the specificgeographical with context,<br>fostering a dynamic and diverse architectural
+                            ensures that modern design.
+                        </p>
+                    </div>
+                    <div class=" lg:col-span-2 lg:px-28">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-10">
+                            <div>
+                                <input class="px-6 py-4 w-full rounded-3xl" type="text" placeholder="First Name*">
+                            </div>
+                            <div>
+                                <input class="px-6 py-4 w-full rounded-3xl" type="text" placeholder="Last Name*">
+                            </div>
+                            <div>
+                                <input class="px-6 py-4 w-full rounded-3xl" type="text" placeholder="Phone Number*">
+                            </div>
+                            <div>
+                                <input class="px-6 py-4 w-full rounded-3xl" type="text" placeholder="Email Number*">
+                            </div>
+                            <div class="lg:col-span-2">
+                                <textarea rows="6" class="lg:col-span-2 px-6 py-4 w-full rounded-3xl" type="text"
+                                    placeholder="Write your message here"></textarea>
+                            </div>
+                            <button
+                                class="btn bg-primary text-xl font-extrabold px-6 py-3 rounded-3xl lg:col-span-2">Send
+                                Mail<img class="bg-black p-1 w-5 h-5 rounded-xl" src="./assets/Group 2.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Footer Section -->
-    <footer>
-
+    <footer class="bg-black pb-14">
+        <div class="w-11/12 mx-auto text-center pt-8">
+            <div class="flex justify-center items-center gap-1.5 ">
+                <img class="bg-primary p-1.5 rounded-full" src="./assets/Group 1.png" alt="">
+                <a class="text-3xl text-border_solid font-extrabold">Rinterio</a>
+            </div>
+            <p class="my-6 text-base text-lighter_gray font-medium">Departure is a threads of innovation and
+                forward thinking concepts<br>To truly appreciate it's essence to design.</p>
+            <div class="lg:flex justify-center items-center gap-20 list-none mb-8">
+                <li class="mb-6 text-base text-border_solid font-medium"><a href="">Home</a></li>
+                <li class="mb-6 text-base text-border_solid font-medium"><a href="">Services</a></li>
+                <li class="mb-6 text-base text-border_solid font-medium"><a href="">Portfolio</a></li>
+                <li class="mb-6 text-base text-border_solid font-medium"><a href="">Blogs</a></li>
+                <li class="mb-6 text-base text-border_solid font-medium"><a href="">Contact Us</a></li>
+            </div>
+            <button class="btn bg-primary text-xl font-extrabold px-7 py-2 rounded-3xl lg:col-span-2">Book Consult<img class="bg-black p-1 w-5 h-5 rounded-xl" src="./assets/Group 2.png" alt="">
+            </button>
+        </div>
     </footer>
 </body>
 
